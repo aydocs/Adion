@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AYdocs Framework - The World's Most Advanced Web Framework</title>
+    
+    <!-- AYdocs Framework CSS -->
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/animations.css">
+    
+    <!-- AYdocs Icons -->
+    <link rel="stylesheet" href="css/icons.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="AYdocs Framework - The most advanced, feature-rich web framework built from scratch. No dependencies, pure HTML, CSS, JS.">
+    <meta name="keywords" content="web framework, css framework, javascript framework, ui components, responsive design">
+    <meta name="author" content="AYdocs">
+    
+    <!-- Open Graph -->
+    <meta property="og:title" content="AYdocs Framework - Advanced Web Framework">
+    <meta property="og:description" content="The world's most advanced web framework built from scratch">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://aydocs.dev">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#6366f1">
+    <meta name="msapplication-TileColor" content="#6366f1">
+</head>
+<body class="theme-light">
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="loading-logo">
+                <svg class="loading-icon" viewBox="0 0 100 100">
+                    <circle cx="50" cy="50" r="45" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-dasharray="283" stroke-dashoffset="283">
+                        <animate attributeName="stroke-dashoffset" dur="2s" values="283;0;283" repeatCount="indefinite"/>
+                    </circle>
+                    <text x="50" y="55" text-anchor="middle" font-size="20" font-weight="bold" fill="currentColor">A</text>
+                </svg>
+            </div>
+            <h2 class="loading-text">AYdocs Framework</h2>
+            <p class="loading-subtitle">Loading the most advanced web framework...</p>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-brand">
+                <a href="#home" class="brand-link">
+                    <svg class="brand-icon" viewBox="0 0 100 100">
+                        <defs>
+                            <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="45" fill="url(#brandGradient)" opacity="0.1"/>
+                        <path d="M30 30 L70 30 L70 70 L30 70 Z" fill="url(#brandGradient)" opacity="0.8"/>
+                        <path d="M35 35 L65 35 L65 65 L35 65 Z" fill="none" stroke="url(#brandGradient)" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="8" fill="url(#brandGradient)"/>
+                    </svg>
+                    <span class="brand-text">AYdocs</span>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="navbar-menu" id="navbar-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link active">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#components" class="nav-link">Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#documentation" class="nav-link">Docs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#examples" class="nav-link">Examples</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme Toggle & CTA -->
+            <div class="navbar-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon theme-light-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="theme-icon theme-dark-icon" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                
+                <button class="btn btn-primary" id="get-started-btn">Get Started</button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav">
+                <li class="mobile-nav-item">
+                    <a href="#home" class="mobile-nav-link">Home</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#features" class="mobile-nav-link">Features</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#components" class="mobile-nav-link">Components</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#documentation" class="mobile-nav-link">Documentation</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="#examples" class="mobile-nav-link">Examples</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <div class="hero-gradient"></div>
+                <div class="hero-particles" id="hero-particles"></div>
+            </div>
+            
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-badge">
+                        <span class="badge-text">🚀 The World's Most Advanced Framework</span>
+                    </div>
+                    
+                    <h1 class="hero-title">
+                        Build <span class="gradient-text">Incredible</span> Web Applications
+                        <br>with <span class="gradient-text">AYdocs Framework</span>
+                    </h1>
+                    
+                    <p class="hero-description">
+                        The most powerful, feature-rich web framework built from scratch. 
+                        No dependencies, pure HTML, CSS, and JavaScript. 
+                        Create stunning, responsive applications with ease.
+                    </p>
+                    
+                    <div class="hero-actions">
+                        <button class="btn btn-primary btn-lg" id="hero-cta-primary">
+                            <span>Start Building</span>
+                            <svg class="btn-icon" viewBox="0 0 24 24">
+                                <path d="M5 12h14M12 5l7 7-7 7"/>
+                            </svg>
+                        </button>
+                        
+                        <button class="btn btn-outline btn-lg" id="hero-cta-secondary">
+                            <svg class="btn-icon" viewBox="0 0 24 24">
+                                <polygon points="5,3 19,12 5,21"/>
+                            </svg>
+                            <span>Watch Demo</span>
+                        </button>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="100000">0</div>
+                            <div class="stat-label">Lines of Code</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="150">0</div>
+                            <div class="stat-label">Components</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="50">0</div>
+                            <div class="stat-label">Utilities</div>
+                        </div>
+                        <div class="stat-item">
+                            <div class="stat-number" data-target="0">0</div>
+                            <div class="stat-label">Dependencies</div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="hero-visual">
+                    <div class="code-window">
+                        <div class="window-header">
+                            <div class="window-controls">
+                                <span class="control close"></span>
+                                <span class="control minimize"></span>
+                                <span class="control maximize"></span>
+                            </div>
+                            <div class="window-title">app.js</div>
+                        </div>
+                        <div class="window-content">
+                            <pre><code class="language-javascript"><span class="comment">// AYdocs Framework Example</span>
+<span class="keyword">import</span> <span class="variable">{</span> <span class="function">Component</span>, <span class="function">Theme</span> <span class="variable">}</span> <span class="keyword">from</span> <span class="string">'@aydocs/framework'</span>;
+
+<span class="keyword">const</span> <span class="variable">app</span> <span class="operator">=</span> <span class="keyword">new</span> <span class="function">Component</span>({
+  <span class="property">name</span>: <span class="string">'my-app'</span>,
+  <span class="property">template</span>: <span class="string">`&lt;div class="card"&gt;Hello World!&lt;/div&gt;`</span>
+});
+
+<span class="function">app</span>.<span class="function">mount</span>(<span class="string">'#app'</span>);</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Features Section -->
+        <section id="features" class="features-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Why Choose AYdocs Framework?</h2>
+                    <p class="section-description">
+                        Built with modern web standards and designed for the future of web development
+                    </p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Zero Dependencies</h3>
+                        <p class="feature-description">
+                            No external libraries or frameworks. Pure HTML, CSS, and JavaScript for maximum performance.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="9" y1="9" x2="15" y2="15"/>
+                                <line x1="15" y1="9" x2="9" y2="15"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Lightning Fast</h3>
+                        <p class="feature-description">
+                            Optimized for speed with minimal CSS footprint and efficient JavaScript execution.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Fully Responsive</h3>
+                        <p class="feature-description">
+                            Mobile-first design that works perfectly on all devices and screen sizes.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24">
+                                <circle cx="12" cy="12" r="3"/>
+                                <path d="M19.4 15a1.65 1.65 0 0 0 .33 1.82l.06.06a2 2 0 0 1 0 2.83 2 2 0 0 1-2.83 0l-.06-.06a1.65 1.65 0 0 0-1.82-.33 1.65 1.65 0 0 0-1 1.51V21a2 2 0 0 1-2 2 2 2 0 0 1-2-2v-.09A1.65 1.65 0 0 0 9 19.4a1.65 1.65 0 0 0-1.82.33l-.06.06a2 2 0 0 1-2.83 0 2 2 0 0 1 0-2.83l.06-.06a1.65 1.65 0 0 0 .33-1.82 1.65 1.65 0 0 0-1.51-1H3a2 2 0 0 1-2-2 2 2 0 0 1 2-2h.09A1.65 1.65 0 0 0 4.6 9a1.65 1.65 0 0 0-.33-1.82l-.06-.06a2 2 0 0 1 0-2.83 2 2 0 0 1 2.83 0l.06.06a1.65 1.65 0 0 0 1.82.33H9a1.65 1.65 0 0 0 1 1.51V3a2 2 0 0 1 2-2 2 2 0 0 1 2 2v.09a1.65 1.65 0 0 0 1 1.51 1.65 1.65 0 0 0 1.82-.33l.06-.06a2 2 0 0 1 2.83 0 2 2 0 0 1 0 2.83l-.06.06a1.65 1.65 0 0 0-.33 1.82V9a1.65 1.65 0 0 0 1.51 1H21a2 2 0 0 1 2 2 2 2 0 0 1-2 2h-.09a1.65 1.65 0 0 0-1.51 1z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Customizable</h3>
+                        <p class="feature-description">
+                            Extensive theming options and customization capabilities for any design needs.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Production Ready</h3>
+                        <p class="feature-description">
+                            Battle-tested components and utilities ready for production applications.
+                        </p>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="feature-title">Modern Standards</h3>
+                        <p class="feature-description">
+                            Built with the latest web standards and best practices for future-proof development.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Components Section -->
+        <section id="components" class="components-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Rich Component Library</h2>
+                    <p class="section-description">
+                        Over 150+ pre-built components ready to use in your projects
+                    </p>
+                </div>
+                
+                <div class="components-showcase">
+                    <!-- Buttons Demo -->
+                    <div class="component-demo">
+                        <h3 class="demo-title">Buttons</h3>
+                        <div class="demo-content">
+                            <button class="btn btn-primary">Primary</button>
+                            <button class="btn btn-secondary">Secondary</button>
+                            <button class="btn btn-success">Success</button>
+                            <button class="btn btn-warning">Warning</button>
+                            <button class="btn btn-danger">Danger</button>
+                            <button class="btn btn-outline">Outline</button>
+                            <button class="btn btn-ghost">Ghost</button>
+                        </div>
+                    </div>
+                    
+                    <!-- Cards Demo -->
+                    <div class="component-demo">
+                        <h3 class="demo-title">Cards</h3>
+                        <div class="demo-content">
+                            <div class="card">
+                                <div class="card-header">
+                                    <h4 class="card-title">Card Title</h4>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-text">This is a basic card component with header and body.</p>
+                                </div>
+                                <div class="card-footer">
+                                    <button class="btn btn-primary">Action</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Modal Demo -->
+                    <div class="component-demo">
+                        <h3 class="demo-title">Modals</h3>
+                        <div class="demo-content">
+                            <button class="btn btn-primary" id="modal-demo-btn">Open Modal</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get Started Today</h2>
+                    <p class="section-description">
+                        Join thousands of developers building amazing applications with AYdocs Framework
+                    </p>
+                </div>
+                
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contact-form">
+                        <div class="form-group">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" id="name" name="name" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" id="email" name="email" class="form-input" required>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea id="message" name="message" class="form-textarea" rows="5" required></textarea>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <svg class="footer-logo" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="45" fill="url(#footerGradient)" opacity="0.1"/>
+                            <path d="M30 30 L70 30 L70 70 L30 70 Z" fill="url(#footerGradient)" opacity="0.8"/>
+                            <circle cx="50" cy="50" r="8" fill="url(#footerGradient)"/>
+                        </svg>
+                        <h3 class="footer-title">AYdocs Framework</h3>
+                    </div>
+                    <p class="footer-description">
+                        The world's most advanced web framework built from scratch. 
+                        No dependencies, pure performance.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Framework</h4>
+                    <ul class="footer-links">
+                        <li><a href="#features" class="footer-link">Features</a></li>
+                        <li><a href="#components" class="footer-link">Components</a></li>
+                        <li><a href="#documentation" class="footer-link">Documentation</a></li>
+                        <li><a href="#examples" class="footer-link">Examples</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">GitHub</a></li>
+                        <li><a href="#" class="footer-link">Community</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Twitter</a></li>
+                        <li><a href="#" class="footer-link">Discord</a></li>
+                        <li><a href="#" class="footer-link">YouTube</a></li>
+                        <li><a href="#" class="footer-link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2024 AYdocs Framework. All rights reserved. 
+                    Built with ❤️ by AYdocs Team.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modal Container -->
+    <div id="modal-container" class="modal-container"></div>
+
+    <!-- AYdocs Framework JavaScript -->
+    <script src="js/framework.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/theme.js"></script>
+    <script src="js/app.js"></script>
+</body>
+</html>
