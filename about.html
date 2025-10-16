@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Adion Framework</title>
+    
+    <!-- Adion Framework CSS -->
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/statistics.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Learn about Adion Framework - The world's most advanced web framework built from scratch">
+    <meta name="keywords" content="adion framework, about, web framework, team, mission, vision">
+    <meta name="author" content="Adion Team">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#6366f1">
+</head>
+<body class="theme-light">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-brand">
+                <a href="index.html" class="brand-link">
+                    <svg class="brand-icon" viewBox="0 0 100 100">
+                        <defs>
+                            <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="45" fill="url(#brandGradient)" opacity="0.1"/>
+                        <path d="M30 30 L70 30 L70 70 L30 70 Z" fill="url(#brandGradient)" opacity="0.8"/>
+                        <path d="M35 35 L65 35 L65 65 L35 65 Z" fill="none" stroke="url(#brandGradient)" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="8" fill="url(#brandGradient)"/>
+                    </svg>
+                    <span class="brand-text">Adion</span>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="navbar-menu" id="navbar-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="docs.html" class="nav-link">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="components.html" class="nav-link">Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="examples.html" class="nav-link">Examples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link active">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme Toggle & CTA -->
+            <div class="navbar-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon theme-light-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="theme-icon theme-dark-icon" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                
+                <button class="btn btn-primary" id="get-started-btn">Get Started</button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="docs.html" class="mobile-nav-link">Documentation</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="components.html" class="mobile-nav-link">Components</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="examples.html" class="mobile-nav-link">Examples</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="about.html" class="mobile-nav-link active">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="about-main">
+        <!-- Hero Section -->
+        <section class="about-hero">
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">About Adion Framework</h1>
+                    <p class="hero-description">
+                        The world's most advanced web framework, built from scratch with a vision 
+                        to revolutionize how developers create modern web applications.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mission Section -->
+        <section class="mission-section">
+            <div class="container">
+                <div class="mission-content">
+                    <div class="mission-text">
+                        <h2 class="section-title">Our Mission</h2>
+                        <p class="section-description">
+                            To empower developers with the most advanced, flexible, and performant 
+                            web framework that enables rapid development of modern applications 
+                            without compromising on quality, accessibility, or user experience.
+                        </p>
+                        <div class="mission-stats">
+                            <div class="stat-item">
+                                <div class="stat-number">100K+</div>
+                                <div class="stat-label">Lines of Code</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">150+</div>
+                                <div class="stat-label">Components</div>
+                            </div>
+                            <div class="stat-number">0</div>
+                                <div class="stat-label">Dependencies</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number">∞</div>
+                                <div class="stat-label">Possibilities</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mission-visual">
+                        <div class="visual-element">
+                            <svg viewBox="0 0 400 300" class="mission-svg">
+                                <defs>
+                                    <linearGradient id="missionGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                        <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                        <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                                    </linearGradient>
+                                </defs>
+                                <circle cx="200" cy="150" r="100" fill="url(#missionGradient)" opacity="0.1"/>
+                                <path d="M100 150 L300 150 M200 50 L200 250" stroke="url(#missionGradient)" stroke-width="2" opacity="0.3"/>
+                                <circle cx="200" cy="150" r="20" fill="url(#missionGradient)"/>
+                                <text x="200" y="155" text-anchor="middle" font-size="12" fill="white" font-weight="bold">A</text>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Values Section -->
+        <section class="values-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Our Values</h2>
+                    <p class="section-description">
+                        The principles that guide everything we do at Adion Framework
+                    </p>
+                </div>
+                
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Innovation</h3>
+                        <p class="value-description">
+                            We constantly push the boundaries of what's possible in web development, 
+                            introducing cutting-edge features and techniques.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Quality</h3>
+                        <p class="value-description">
+                            Every line of code is crafted with precision, ensuring reliability, 
+                            performance, and maintainability.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2M9 7a4 4 0 100 8 4 4 0 000-8zM23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Community</h3>
+                        <p class="value-description">
+                            We believe in the power of community and strive to create tools 
+                            that bring developers together.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Performance</h3>
+                        <p class="value-description">
+                            Speed and efficiency are at the core of our framework, 
+                            ensuring optimal user experiences.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2a10 10 0 1 0 10 10A10 10 0 0 0 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Accessibility</h3>
+                        <p class="value-description">
+                            We ensure our framework is accessible to everyone, 
+                            following WCAG guidelines and best practices.
+                        </p>
+                    </div>
+                    
+                    <div class="value-card">
+                        <div class="value-icon">
+                            <svg viewBox="0 0 24 24">
+                                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                            </svg>
+                        </div>
+                        <h3 class="value-title">Simplicity</h3>
+                        <p class="value-description">
+                            Complex problems deserve simple solutions. We make advanced 
+                            features easy to use and understand.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Team Section -->
+        <section class="team-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Meet Our Team</h2>
+                    <p class="section-description">
+                        The passionate developers and designers behind Adion Framework
+                    </p>
+                </div>
+                
+                <div class="team-grid">
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">JD</div>
+                        </div>
+                        <h3 class="member-name">John Doe</h3>
+                        <p class="member-role">Lead Developer</p>
+                        <p class="member-bio">
+                            Full-stack developer with 10+ years of experience in web technologies. 
+                            Passionate about creating efficient and scalable solutions.
+                        </p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">JS</div>
+                        </div>
+                        <h3 class="member-name">Jane Smith</h3>
+                        <p class="member-role">UI/UX Designer</p>
+                        <p class="member-bio">
+                            Creative designer focused on user experience and interface design. 
+                            Believes in the power of beautiful, functional design.
+                        </p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">Dribbble</a>
+                            <a href="#" class="social-link">Behance</a>
+                            <a href="#" class="social-link">Twitter</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">MJ</div>
+                        </div>
+                        <h3 class="member-name">Mike Johnson</h3>
+                        <p class="member-role">Performance Engineer</p>
+                        <p class="member-bio">
+                            Performance optimization specialist with expertise in web performance 
+                            and browser technologies. Always pushing for faster, better experiences.
+                        </p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">GitHub</a>
+                            <a href="#" class="social-link">Medium</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                        </div>
+                    </div>
+                    
+                    <div class="team-member">
+                        <div class="member-avatar">
+                            <div class="avatar-placeholder">SW</div>
+                        </div>
+                        <h3 class="member-name">Sarah Wilson</h3>
+                        <p class="member-role">Accessibility Expert</p>
+                        <p class="member-bio">
+                            Accessibility advocate ensuring our framework is inclusive and 
+                            usable by everyone. Expert in WCAG guidelines and inclusive design.
+                        </p>
+                        <div class="member-social">
+                            <a href="#" class="social-link">Twitter</a>
+                            <a href="#" class="social-link">LinkedIn</a>
+                            <a href="#" class="social-link">Blog</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Story Section -->
+        <section class="story-section">
+            <div class="container">
+                <div class="story-content">
+                    <div class="story-text">
+                        <h2 class="section-title">Our Story</h2>
+                        <p class="story-paragraph">
+                            Adion Framework was born from a simple observation: existing web frameworks 
+                            were either too complex, too opinionated, or too limited. We wanted to create 
+                            something different - a framework that would be powerful yet simple, 
+                            flexible yet opinionated, and comprehensive yet lightweight.
+                        </p>
+                        <p class="story-paragraph">
+                            Starting as a small team of passionate developers, we spent countless hours 
+                            researching, prototyping, and iterating on the perfect web framework. 
+                            Our goal was clear: build the most advanced web framework from scratch, 
+                            with zero dependencies, maximum performance, and unlimited possibilities.
+                        </p>
+                        <p class="story-paragraph">
+                            Today, Adion Framework stands as a testament to what's possible when you 
+                            combine innovation, dedication, and a deep understanding of modern web 
+                            development. We're proud to have created something that empowers developers 
+                            worldwide to build amazing applications.
+                        </p>
+                    </div>
+                    <div class="story-timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">2023 - The Beginning</h4>
+                                <p class="timeline-description">Initial concept and research phase</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">2024 Q1 - Development</h4>
+                                <p class="timeline-description">Core framework development started</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">2024 Q2 - Components</h4>
+                                <p class="timeline-description">Component library development</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker"></div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">2024 Q3 - Testing</h4>
+                                <p class="timeline-description">Comprehensive testing and optimization</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-marker active"></div>
+                            <div class="timeline-content">
+                                <h4 class="timeline-title">2024 Q4 - Launch</h4>
+                                <p class="timeline-description">Public release and community building</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title">Get in Touch</h2>
+                    <p class="section-description">
+                        Have questions, suggestions, or want to contribute? We'd love to hear from you!
+                    </p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                                    <polyline points="22,6 12,13 2,6"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Email</h4>
+                                <p>hello@adion.dev</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Phone</h4>
+                                <p>+1 (555) 123-4567</p>
+                            </div>
+                        </div>
+                        
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <svg viewBox="0 0 24 24">
+                                    <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/>
+                                    <circle cx="12" cy="10" r="3"/>
+                                </svg>
+                            </div>
+                            <div class="contact-details">
+                                <h4>Office</h4>
+                                <p>123 Framework Street<br>San Francisco, CA 94105</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form">
+                        <form class="adi-form" id="contact-form">
+                            <div class="adi-form-group">
+                                <label for="name" class="adi-form-label">Name</label>
+                                <input type="text" id="name" name="name" class="adi-form-input" required>
+                            </div>
+                            
+                            <div class="adi-form-group">
+                                <label for="email" class="adi-form-label">Email</label>
+                                <input type="email" id="email" name="email" class="adi-form-input" required>
+                            </div>
+                            
+                            <div class="adi-form-group">
+                                <label for="subject" class="adi-form-label">Subject</label>
+                                <input type="text" id="subject" name="subject" class="adi-form-input" required>
+                            </div>
+                            
+                            <div class="adi-form-group">
+                                <label for="message" class="adi-form-label">Message</label>
+                                <textarea id="message" name="message" class="adi-form-textarea" rows="5" required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="adi-btn adi-btn-primary adi-btn-block">Send Message</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <svg class="footer-logo" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="45" fill="url(#footerGradient)" opacity="0.1"/>
+                            <path d="M30 30 L70 30 L70 70 L30 70 Z" fill="url(#footerGradient)" opacity="0.8"/>
+                            <circle cx="50" cy="50" r="8" fill="url(#footerGradient)"/>
+                        </svg>
+                        <h3 class="footer-title">Adion Framework</h3>
+                    </div>
+                    <p class="footer-description">
+                        The world's most advanced web framework built from scratch. 
+                        No dependencies, pure performance.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">About</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Our Story</a></li>
+                        <li><a href="#" class="footer-link">Team</a></li>
+                        <li><a href="#" class="footer-link">Mission</a></li>
+                        <li><a href="#" class="footer-link">Values</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">GitHub</a></li>
+                        <li><a href="#" class="footer-link">Community</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Twitter</a></li>
+                        <li><a href="#" class="footer-link">Discord</a></li>
+                        <li><a href="#" class="footer-link">YouTube</a></li>
+                        <li><a href="#" class="footer-link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2024 Adion Framework. All rights reserved. 
+                    Built with ❤️ by Adion Team.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modal Container -->
+    <div id="modal-container" class="modal-container"></div>
+
+    <!-- Adion Framework JavaScript -->
+    <script src="js/framework.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/statistics.js"></script>
+    <script src="js/app.js"></script>
+    
+    <!-- About Page JavaScript -->
+    <script>
+        // Contact form handling
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault();
+            
+            const formData = new FormData(this);
+            const data = Object.fromEntries(formData);
+            
+            // Show loading state
+            const submitBtn = this.querySelector('button[type="submit"]');
+            const originalText = submitBtn.textContent;
+            submitBtn.textContent = 'Sending...';
+            submitBtn.disabled = true;
+            
+            // Simulate form submission
+            setTimeout(() => {
+                if (window.AYdocsNotifications) {
+                    window.AYdocsNotifications.success('Message Sent!', 'Thank you for your message. We\'ll get back to you soon.');
+                }
+                
+                // Reset form
+                this.reset();
+                
+                // Reset button
+                submitBtn.textContent = originalText;
+                submitBtn.disabled = false;
+            }, 2000);
+        });
+
+        // Animate timeline on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.timeline-item').forEach(item => {
+            timelineObserver.observe(item);
+        });
+
+        // Animate value cards on scroll
+        document.querySelectorAll('.value-card').forEach(card => {
+            timelineObserver.observe(card);
+        });
+
+        // Animate team members on scroll
+        document.querySelectorAll('.team-member').forEach(member => {
+            timelineObserver.observe(member);
+        });
+    </script>
+</body>
+</html>

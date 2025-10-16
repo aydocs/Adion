@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Examples - Adion Framework</title>
+    
+    <!-- Adion Framework CSS -->
+    <link rel="stylesheet" href="css/framework.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/themes.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/statistics.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
+    
+    <!-- Meta Tags -->
+    <meta name="description" content="Explore real-world examples and templates built with Adion Framework">
+    <meta name="keywords" content="adion framework, examples, templates, web examples, ui examples">
+    <meta name="author" content="Adion Team">
+    
+    <!-- Theme Color -->
+    <meta name="theme-color" content="#6366f1">
+</head>
+<body class="theme-light">
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <!-- Logo -->
+            <div class="navbar-brand">
+                <a href="index.html" class="brand-link">
+                    <svg class="brand-icon" viewBox="0 0 100 100">
+                        <defs>
+                            <linearGradient id="brandGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle cx="50" cy="50" r="45" fill="url(#brandGradient)" opacity="0.1"/>
+                        <path d="M30 30 L70 30 L70 70 L30 70 Z" fill="url(#brandGradient)" opacity="0.8"/>
+                        <path d="M35 35 L65 35 L65 65 L35 65 Z" fill="none" stroke="url(#brandGradient)" stroke-width="2"/>
+                        <circle cx="50" cy="50" r="8" fill="url(#brandGradient)"/>
+                    </svg>
+                    <span class="brand-text">Adion</span>
+                </a>
+            </div>
+
+            <!-- Desktop Menu -->
+            <div class="navbar-menu" id="navbar-menu">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="docs.html" class="nav-link">Documentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="components.html" class="nav-link">Components</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="examples.html" class="nav-link active">Examples</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Theme Toggle & CTA -->
+            <div class="navbar-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <svg class="theme-icon theme-light-icon" viewBox="0 0 24 24">
+                        <circle cx="12" cy="12" r="5"/>
+                        <line x1="12" y1="1" x2="12" y2="3"/>
+                        <line x1="12" y1="21" x2="12" y2="23"/>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/>
+                        <line x1="1" y1="12" x2="3" y2="12"/>
+                        <line x1="21" y1="12" x2="23" y2="12"/>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
+                    </svg>
+                    <svg class="theme-icon theme-dark-icon" viewBox="0 0 24 24">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>
+                    </svg>
+                </button>
+                
+                <button class="btn btn-primary" id="get-started-btn">Get Started</button>
+                
+                <!-- Mobile Menu Toggle -->
+                <button class="mobile-menu-toggle" id="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                    <span class="hamburger-line"></span>
+                </button>
+            </div>
+        </div>
+
+        <!-- Mobile Menu -->
+        <div class="mobile-menu" id="mobile-menu">
+            <ul class="mobile-nav">
+                <li class="mobile-nav-item">
+                    <a href="index.html" class="mobile-nav-link">Home</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="docs.html" class="mobile-nav-link">Documentation</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="components.html" class="mobile-nav-link">Components</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="examples.html" class="mobile-nav-link active">Examples</a>
+                </li>
+                <li class="mobile-nav-item">
+                    <a href="about.html" class="mobile-nav-link">About</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="examples-main">
+        <div class="container">
+            <!-- Header -->
+            <div class="examples-header">
+                <h1 class="examples-title">Examples & Templates</h1>
+                <p class="examples-description">
+                    Discover real-world applications and templates built with Adion Framework. 
+                    From simple landing pages to complex dashboards, see what's possible.
+                </p>
+                
+                <!-- Filter Tabs -->
+                <div class="example-filters">
+                    <button class="filter-btn active" data-filter="all">All Examples</button>
+                    <button class="filter-btn" data-filter="landing">Landing Pages</button>
+                    <button class="filter-btn" data-filter="dashboard">Dashboards</button>
+                    <button class="filter-btn" data-filter="ecommerce">E-commerce</button>
+                    <button class="filter-btn" data-filter="portfolio">Portfolio</button>
+                    <button class="filter-btn" data-filter="blog">Blog</button>
+                </div>
+            </div>
+
+            <!-- Examples Grid -->
+            <div class="examples-grid">
+                <!-- Landing Page Example -->
+                <div class="example-card" data-category="landing">
+                    <div class="example-preview">
+                        <div class="preview-image">
+                            <div class="preview-content">
+                                <div class="preview-header">
+                                    <div class="preview-logo">A</div>
+                                    <nav class="preview-nav">
+                                        <a href="#">Home</a>
+                                        <a href="#">About</a>
+                                        <a href="#">Contact</a>
+                                    </nav>
+                                </div>
+                                <div class="preview-hero">
+                                    <h2>Welcome to Our Platform</h2>
+                                    <p>Build amazing applications with ease</p>
+                                    <button class="preview-btn">Get Started</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-info">
+                        <h3 class="example-title">Modern Landing Page</h3>
+                        <p class="example-description">
+                            A clean, modern landing page with hero section, features, and call-to-action.
+                        </p>
+                        <div class="example-tags">
+                            <span class="tag">Landing Page</span>
+                            <span class="tag">Responsive</span>
+                            <span class="tag">Modern</span>
+                        </div>
+                        <div class="example-actions">
+                            <button class="adi-btn adi-btn-outline" onclick="viewExample('landing')">View Live</button>
+                            <button class="adi-btn adi-btn-primary" onclick="downloadExample('landing')">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Dashboard Example -->
+                <div class="example-card" data-category="dashboard">
+                    <div class="example-preview">
+                        <div class="preview-image">
+                            <div class="preview-content dashboard-preview">
+                                <div class="preview-sidebar">
+                                    <div class="sidebar-item active">Dashboard</div>
+                                    <div class="sidebar-item">Analytics</div>
+                                    <div class="sidebar-item">Users</div>
+                                    <div class="sidebar-item">Settings</div>
+                                </div>
+                                <div class="preview-main">
+                                    <div class="preview-stats">
+                                        <div class="stat-card">1,234</div>
+                                        <div class="stat-card">567</div>
+                                        <div class="stat-card">89</div>
+                                    </div>
+                                    <div class="preview-chart">
+                                        <div class="chart-placeholder">📊</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-info">
+                        <h3 class="example-title">Analytics Dashboard</h3>
+                        <p class="example-description">
+                            A comprehensive dashboard with charts, statistics, and data visualization.
+                        </p>
+                        <div class="example-tags">
+                            <span class="tag">Dashboard</span>
+                            <span class="tag">Analytics</span>
+                            <span class="tag">Charts</span>
+                        </div>
+                        <div class="example-actions">
+                            <button class="adi-btn adi-btn-outline" onclick="viewExample('dashboard')">View Live</button>
+                            <button class="adi-btn adi-btn-primary" onclick="downloadExample('dashboard')">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- E-commerce Example -->
+                <div class="example-card" data-category="ecommerce">
+                    <div class="example-preview">
+                        <div class="preview-image">
+                            <div class="preview-content ecommerce-preview">
+                                <div class="preview-header">
+                                    <div class="preview-logo">Shop</div>
+                                    <div class="preview-cart">🛒</div>
+                                </div>
+                                <div class="preview-products">
+                                    <div class="product-card">
+                                        <div class="product-image">📱</div>
+                                        <div class="product-info">
+                                            <h4>Product Name</h4>
+                                            <p>$99.99</p>
+                                        </div>
+                                    </div>
+                                    <div class="product-card">
+                                        <div class="product-image">💻</div>
+                                        <div class="product-info">
+                                            <h4>Product Name</h4>
+                                            <p>$299.99</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-info">
+                        <h3 class="example-title">E-commerce Store</h3>
+                        <p class="example-description">
+                            A complete online store with product listings, cart, and checkout flow.
+                        </p>
+                        <div class="example-tags">
+                            <span class="tag">E-commerce</span>
+                            <span class="tag">Shopping</span>
+                            <span class="tag">Cart</span>
+                        </div>
+                        <div class="example-actions">
+                            <button class="adi-btn adi-btn-outline" onclick="viewExample('ecommerce')">View Live</button>
+                            <button class="adi-btn adi-btn-primary" onclick="downloadExample('ecommerce')">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Portfolio Example -->
+                <div class="example-card" data-category="portfolio">
+                    <div class="example-preview">
+                        <div class="preview-image">
+                            <div class="preview-content portfolio-preview">
+                                <div class="preview-hero">
+                                    <div class="preview-avatar">👨‍💻</div>
+                                    <h2>John Doe</h2>
+                                    <p>Full Stack Developer</p>
+                                </div>
+                                <div class="preview-projects">
+                                    <div class="project-item">Project 1</div>
+                                    <div class="project-item">Project 2</div>
+                                    <div class="project-item">Project 3</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-info">
+                        <h3 class="example-title">Portfolio Website</h3>
+                        <p class="example-description">
+                            A professional portfolio showcasing projects, skills, and contact information.
+                        </p>
+                        <div class="example-tags">
+                            <span class="tag">Portfolio</span>
+                            <span class="tag">Personal</span>
+                            <span class="tag">Creative</span>
+                        </div>
+                        <div class="example-actions">
+                            <button class="adi-btn adi-btn-outline" onclick="viewExample('portfolio')">View Live</button>
+                            <button class="adi-btn adi-btn-primary" onclick="downloadExample('portfolio')">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Blog Example -->
+                <div class="example-card" data-category="blog">
+                    <div class="example-preview">
+                        <div class="preview-image">
+                            <div class="preview-content blog-preview">
+                                <div class="preview-header">
+                                    <h2>My Blog</h2>
+                                    <nav class="preview-nav">
+                                        <a href="#">Home</a>
+                                        <a href="#">About</a>
+                                        <a href="#">Contact</a>
+                                    </nav>
+                                </div>
+                                <div class="preview-posts">
+                                    <div class="post-item">
+                                        <h3>Blog Post Title</h3>
+                                        <p>Blog post excerpt...</p>
+                                    </div>
+                                    <div class="post-item">
+                                        <h3>Another Post</h3>
+                                        <p>Another excerpt...</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-info">
+                        <h3 class="example-title">Blog Template</h3>
+                        <p class="example-description">
+                            A clean blog template with post listings, categories, and author information.
+                        </p>
+                        <div class="example-tags">
+                            <span class="tag">Blog</span>
+                            <span class="tag">Content</span>
+                            <span class="tag">Reading</span>
+                        </div>
+                        <div class="example-actions">
+                            <button class="adi-btn adi-btn-outline" onclick="viewExample('blog')">View Live</button>
+                            <button class="adi-btn adi-btn-primary" onclick="downloadExample('blog')">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- SaaS Landing Example -->
+                <div class="example-card" data-category="landing">
+                    <div class="example-preview">
+                        <div class="preview-image">
+                            <div class="preview-content saas-preview">
+                                <div class="preview-header">
+                                    <div class="preview-logo">SaaS</div>
+                                    <button class="preview-btn">Sign Up</button>
+                                </div>
+                                <div class="preview-hero">
+                                    <h2>Powerful SaaS Platform</h2>
+                                    <p>Streamline your workflow with our amazing tools</p>
+                                    <div class="preview-features">
+                                        <div class="feature-item">✓ Feature 1</div>
+                                        <div class="feature-item">✓ Feature 2</div>
+                                        <div class="feature-item">✓ Feature 3</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-info">
+                        <h3 class="example-title">SaaS Landing Page</h3>
+                        <p class="example-description">
+                            A conversion-focused landing page for SaaS products with pricing and features.
+                        </p>
+                        <div class="example-tags">
+                            <span class="tag">SaaS</span>
+                            <span class="tag">Landing</span>
+                            <span class="tag">Conversion</span>
+                        </div>
+                        <div class="example-actions">
+                            <button class="adi-btn adi-btn-outline" onclick="viewExample('saas')">View Live</button>
+                            <button class="adi-btn adi-btn-primary" onclick="downloadExample('saas')">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Admin Panel Example -->
+                <div class="example-card" data-category="dashboard">
+                    <div class="example-preview">
+                        <div class="preview-image">
+                            <div class="preview-content admin-preview">
+                                <div class="preview-sidebar">
+                                    <div class="sidebar-item active">Dashboard</div>
+                                    <div class="sidebar-item">Users</div>
+                                    <div class="sidebar-item">Content</div>
+                                    <div class="sidebar-item">Settings</div>
+                                </div>
+                                <div class="preview-main">
+                                    <div class="preview-toolbar">
+                                        <h3>Admin Panel</h3>
+                                        <button class="preview-btn">Add New</button>
+                                    </div>
+                                    <div class="preview-table">
+                                        <div class="table-header">
+                                            <div>Name</div>
+                                            <div>Status</div>
+                                            <div>Actions</div>
+                                        </div>
+                                        <div class="table-row">
+                                            <div>User 1</div>
+                                            <div>Active</div>
+                                            <div>Edit</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-info">
+                        <h3 class="example-title">Admin Panel</h3>
+                        <p class="example-description">
+                            A comprehensive admin panel with user management and content controls.
+                        </p>
+                        <div class="example-tags">
+                            <span class="tag">Admin</span>
+                            <span class="tag">Management</span>
+                            <span class="tag">Control Panel</span>
+                        </div>
+                        <div class="example-actions">
+                            <button class="adi-btn adi-btn-outline" onclick="viewExample('admin')">View Live</button>
+                            <button class="adi-btn adi-btn-primary" onclick="downloadExample('admin')">Download</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Mobile App Landing Example -->
+                <div class="example-card" data-category="landing">
+                    <div class="example-preview">
+                        <div class="preview-image">
+                            <div class="preview-content mobile-preview">
+                                <div class="preview-hero">
+                                    <div class="preview-phone">📱</div>
+                                    <h2>Amazing Mobile App</h2>
+                                    <p>Download our app and experience the future</p>
+                                    <div class="preview-buttons">
+                                        <button class="preview-btn">App Store</button>
+                                        <button class="preview-btn">Google Play</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="example-info">
+                        <h3 class="example-title">Mobile App Landing</h3>
+                        <p class="example-description">
+                            A mobile-first landing page for app promotion with download links.
+                        </p>
+                        <div class="example-tags">
+                            <span class="tag">Mobile</span>
+                            <span class="tag">App</span>
+                            <span class="tag">Download</span>
+                        </div>
+                        <div class="example-actions">
+                            <button class="adi-btn adi-btn-outline" onclick="viewExample('mobile')">View Live</button>
+                            <button class="adi-btn adi-btn-primary" onclick="downloadExample('mobile')">Download</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Load More -->
+            <div class="load-more-container">
+                <button class="adi-btn adi-btn-outline adi-btn-lg" id="load-more-examples">Load More Examples</button>
+            </div>
+        </div>
+    </main>
+
+    <!-- Example Preview Modal -->
+    <div id="example-modal" class="adi-modal">
+        <div class="adi-modal-content adi-modal-lg">
+            <div class="adi-modal-header">
+                <h3 class="adi-modal-title">Example Preview</h3>
+                <button class="adi-modal-close" onclick="closeExampleModal()">&times;</button>
+            </div>
+            <div class="adi-modal-body">
+                <div class="example-preview-full">
+                    <iframe id="example-iframe" src="" frameborder="0"></iframe>
+                </div>
+            </div>
+            <div class="adi-modal-footer">
+                <button class="adi-btn adi-btn-outline" onclick="closeExampleModal()">Close</button>
+                <button class="adi-btn adi-btn-primary" onclick="downloadCurrentExample()">Download</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="footer-brand">
+                        <svg class="footer-logo" viewBox="0 0 100 100">
+                            <defs>
+                                <linearGradient id="footerGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                    <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+                                    <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+                                </linearGradient>
+                            </defs>
+                            <circle cx="50" cy="50" r="45" fill="url(#footerGradient)" opacity="0.1"/>
+                            <path d="M30 30 L70 30 L70 70 L30 70 Z" fill="url(#footerGradient)" opacity="0.8"/>
+                            <circle cx="50" cy="50" r="8" fill="url(#footerGradient)"/>
+                        </svg>
+                        <h3 class="footer-title">Adion Framework</h3>
+                    </div>
+                    <p class="footer-description">
+                        The world's most advanced web framework built from scratch. 
+                        No dependencies, pure performance.
+                    </p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Examples</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Landing Pages</a></li>
+                        <li><a href="#" class="footer-link">Dashboards</a></li>
+                        <li><a href="#" class="footer-link">E-commerce</a></li>
+                        <li><a href="#" class="footer-link">Portfolio</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Resources</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">GitHub</a></li>
+                        <li><a href="#" class="footer-link">Community</a></li>
+                        <li><a href="#" class="footer-link">Blog</a></li>
+                        <li><a href="#" class="footer-link">Support</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Twitter</a></li>
+                        <li><a href="#" class="footer-link">Discord</a></li>
+                        <li><a href="#" class="footer-link">YouTube</a></li>
+                        <li><a href="#" class="footer-link">LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p class="footer-copyright">
+                    &copy; 2024 Adion Framework. All rights reserved. 
+                    Built with ❤️ by Adion Team.
+                </p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Toast Container -->
+    <div id="toast-container" class="toast-container"></div>
+
+    <!-- Modal Container -->
+    <div id="modal-container" class="modal-container"></div>
+
+    <!-- Adion Framework JavaScript -->
+    <script src="js/framework.js"></script>
+    <script src="js/components.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/statistics.js"></script>
+    <script src="js/app.js"></script>
+    
+    <!-- Examples Page JavaScript -->
+    <script>
+        let currentExample = '';
+
+        // Filter examples
+        document.querySelectorAll('.filter-btn').forEach(btn => {
+            btn.addEventListener('click', function() {
+                const filter = this.getAttribute('data-filter');
+                
+                // Update active filter
+                document.querySelectorAll('.filter-btn').forEach(b => b.classList.remove('active'));
+                this.classList.add('active');
+                
+                // Filter examples
+                document.querySelectorAll('.example-card').forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // View example
+        function viewExample(example) {
+            currentExample = example;
+            const modal = document.getElementById('example-modal');
+            const iframe = document.getElementById('example-iframe');
+            
+            // Set iframe source (in real implementation, this would be actual example URLs)
+            iframe.src = `examples/${example}/index.html`;
+            
+            modal.classList.add('adi-modal-show');
+        }
+
+        // Close example modal
+        function closeExampleModal() {
+            document.getElementById('example-modal').classList.remove('adi-modal-show');
+            document.getElementById('example-iframe').src = '';
+        }
+
+        // Download example
+        function downloadExample(example) {
+            if (window.AYdocsNotifications) {
+                window.AYdocsNotifications.success('Download Started', `Downloading ${example} example...`);
+            }
+            
+            // Simulate download
+            setTimeout(() => {
+                if (window.AYdocsNotifications) {
+                    window.AYdocsNotifications.success('Download Complete', 'Example downloaded successfully!');
+                }
+            }, 2000);
+        }
+
+        // Download current example
+        function downloadCurrentExample() {
+            if (currentExample) {
+                downloadExample(currentExample);
+            }
+        }
+
+        // Load more examples
+        document.getElementById('load-more-examples').addEventListener('click', function() {
+            if (window.AYdocsNotifications) {
+                window.AYdocsNotifications.info('Loading...', 'Loading more examples...');
+            }
+            
+            // Simulate loading
+            setTimeout(() => {
+                if (window.AYdocsNotifications) {
+                    window.AYdocsNotifications.success('Loaded!', 'More examples loaded successfully!');
+                }
+            }, 1500);
+        });
+
+        // Show toast notification
+        function showToast(message, type) {
+            if (window.AYdocsNotifications) {
+                window.AYdocsNotifications[type](message);
+            }
+        }
+    </script>
+</body>
+</html>

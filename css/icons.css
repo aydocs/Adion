@@ -1,0 +1,691 @@
+/*!
+ * Adion Framework - Icon System
+ * Advanced SVG icon library with 500+ icons
+ */
+
+/* ========================================
+   ICON BASE STYLES
+   ======================================== */
+
+.icon {
+  display: inline-block;
+  width: 1em;
+  height: 1em;
+  stroke-width: 2;
+  stroke: currentColor;
+  fill: none;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  vertical-align: middle;
+  flex-shrink: 0;
+}
+
+.icon-fill {
+  fill: currentColor;
+  stroke: none;
+}
+
+.icon-sm {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.icon-md {
+  width: 1rem;
+  height: 1rem;
+}
+
+.icon-lg {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.icon-xl {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.icon-2xl {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-3xl {
+  width: 3rem;
+  height: 3rem;
+}
+
+/* ========================================
+   ICON ANIMATIONS
+   ======================================== */
+
+@keyframes iconSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes iconPulse {
+  0%, 100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+}
+
+@keyframes iconBounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+}
+
+@keyframes iconShake {
+  0%, 100% {
+    transform: translateX(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translateX(-5px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translateX(5px);
+  }
+}
+
+.icon-spin {
+  animation: iconSpin 1s linear infinite;
+}
+
+.icon-pulse {
+  animation: iconPulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.icon-bounce {
+  animation: iconBounce 1s infinite;
+}
+
+.icon-shake {
+  animation: iconShake 0.5s ease-in-out;
+}
+
+/* ========================================
+   ICON COLORS
+   ======================================== */
+
+.icon-primary {
+  color: var(--color-primary);
+}
+
+.icon-secondary {
+  color: var(--color-secondary);
+}
+
+.icon-success {
+  color: var(--color-success);
+}
+
+.icon-warning {
+  color: var(--color-warning);
+}
+
+.icon-danger {
+  color: var(--color-danger);
+}
+
+.icon-info {
+  color: var(--color-info);
+}
+
+.icon-muted {
+  color: var(--color-muted-foreground);
+}
+
+/* ========================================
+   ICON SIZES (EXTENDED)
+   ======================================== */
+
+.icon-xs {
+  width: 0.75rem;
+  height: 0.75rem;
+}
+
+.icon-4xl {
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon-5xl {
+  width: 5rem;
+  height: 5rem;
+}
+
+.icon-6xl {
+  width: 6rem;
+  height: 6rem;
+}
+
+/* ========================================
+   ICON UTILITIES
+   ======================================== */
+
+.icon-rotate-45 {
+  transform: rotate(45deg);
+}
+
+.icon-rotate-90 {
+  transform: rotate(90deg);
+}
+
+.icon-rotate-180 {
+  transform: rotate(180deg);
+}
+
+.icon-rotate-270 {
+  transform: rotate(270deg);
+}
+
+.icon-flip-horizontal {
+  transform: scaleX(-1);
+}
+
+.icon-flip-vertical {
+  transform: scaleY(-1);
+}
+
+.icon-flip-both {
+  transform: scale(-1, -1);
+}
+
+/* ========================================
+   ICON CONTAINERS
+   ======================================== */
+
+.icon-container {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  transition: var(--transition-all);
+}
+
+.icon-container-sm {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-container-md {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.icon-container-lg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon-container-xl {
+  width: 4rem;
+  height: 4rem;
+}
+
+.icon-container-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.icon-container-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-foreground);
+}
+
+.icon-container-success {
+  background-color: var(--color-success);
+  color: var(--color-success-foreground);
+}
+
+.icon-container-warning {
+  background-color: var(--color-warning);
+  color: var(--color-warning-foreground);
+}
+
+.icon-container-danger {
+  background-color: var(--color-danger);
+  color: var(--color-danger-foreground);
+}
+
+.icon-container-info {
+  background-color: var(--color-info);
+  color: var(--color-info-foreground);
+}
+
+.icon-container-outline {
+  background-color: transparent;
+  border: 1px solid var(--color-border);
+  color: var(--color-foreground);
+}
+
+.icon-container-outline:hover {
+  background-color: var(--color-muted);
+  border-color: var(--color-primary);
+  color: var(--color-primary);
+}
+
+/* ========================================
+   ICON BUTTONS
+   ======================================== */
+
+.icon-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.5rem;
+  height: 2.5rem;
+  border: none;
+  border-radius: var(--radius-md);
+  background-color: transparent;
+  color: var(--color-foreground-muted);
+  cursor: pointer;
+  transition: var(--transition-all);
+  position: relative;
+  overflow: hidden;
+}
+
+.icon-btn:hover {
+  background-color: var(--color-muted);
+  color: var(--color-foreground);
+  transform: translateY(-1px);
+}
+
+.icon-btn:active {
+  transform: translateY(0);
+}
+
+.icon-btn-sm {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-btn-lg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.icon-btn-primary {
+  background-color: var(--color-primary);
+  color: var(--color-primary-foreground);
+}
+
+.icon-btn-primary:hover {
+  background-color: var(--color-primary-600);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.icon-btn-secondary {
+  background-color: var(--color-secondary);
+  color: var(--color-secondary-foreground);
+}
+
+.icon-btn-secondary:hover {
+  background-color: var(--color-secondary-600);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.icon-btn-success {
+  background-color: var(--color-success);
+  color: var(--color-success-foreground);
+}
+
+.icon-btn-success:hover {
+  background-color: var(--color-success-600);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.icon-btn-warning {
+  background-color: var(--color-warning);
+  color: var(--color-warning-foreground);
+}
+
+.icon-btn-warning:hover {
+  background-color: var(--color-warning-600);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.icon-btn-danger {
+  background-color: var(--color-danger);
+  color: var(--color-danger-foreground);
+}
+
+.icon-btn-danger:hover {
+  background-color: var(--color-danger-600);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+/* ========================================
+   ICON LISTS
+   ======================================== */
+
+.icon-list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.icon-list-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-3);
+  padding: var(--space-2) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.icon-list-item:last-child {
+  border-bottom: none;
+}
+
+.icon-list-item .icon {
+  flex-shrink: 0;
+}
+
+.icon-list-content {
+  flex: 1;
+}
+
+.icon-list-title {
+  font-weight: var(--font-medium);
+  color: var(--color-foreground);
+  margin: 0;
+}
+
+.icon-list-description {
+  color: var(--color-foreground-muted);
+  font-size: var(--text-sm);
+  margin: var(--space-1) 0 0 0;
+}
+
+/* ========================================
+   ICON GRIDS
+   ======================================== */
+
+.icon-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(8rem, 1fr));
+  gap: var(--space-4);
+}
+
+.icon-grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-4);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  background-color: var(--color-surface);
+  transition: var(--transition-all);
+  cursor: pointer;
+}
+
+.icon-grid-item:hover {
+  border-color: var(--color-primary);
+  background-color: var(--color-primary-50);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md);
+}
+
+.icon-grid-item .icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+.icon-grid-label {
+  font-size: var(--text-xs);
+  color: var(--color-foreground-muted);
+  text-align: center;
+  word-break: break-word;
+}
+
+/* ========================================
+   ICON LOADING STATES
+   ======================================== */
+
+.icon-loading {
+  position: relative;
+}
+
+.icon-loading::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border: 2px solid var(--color-border);
+  border-top: 2px solid var(--color-primary);
+  border-radius: 50%;
+  animation: iconSpin 1s linear infinite;
+}
+
+/* ========================================
+   ICON BADGES
+   ======================================== */
+
+.icon-badge {
+  position: relative;
+}
+
+.icon-badge::after {
+  content: attr(data-badge);
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  min-width: 1.25rem;
+  height: 1.25rem;
+  padding: 0 0.25rem;
+  background-color: var(--color-danger);
+  color: white;
+  font-size: 0.75rem;
+  font-weight: var(--font-bold);
+  border-radius: var(--radius-full);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  line-height: 1;
+}
+
+.icon-badge-dot::after {
+  content: '';
+  width: 0.5rem;
+  height: 0.5rem;
+  min-width: auto;
+  padding: 0;
+  background-color: var(--color-danger);
+}
+
+/* ========================================
+   ICON TOOLTIPS
+   ======================================== */
+
+.icon-tooltip {
+  position: relative;
+}
+
+.icon-tooltip::before {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: var(--space-2);
+  padding: var(--space-1) var(--space-2);
+  background-color: var(--color-foreground);
+  color: var(--color-background);
+  font-size: var(--text-xs);
+  border-radius: var(--radius-sm);
+  white-space: nowrap;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-all);
+  z-index: var(--z-50);
+}
+
+.icon-tooltip::after {
+  content: '';
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: var(--space-1);
+  border: 4px solid transparent;
+  border-top-color: var(--color-foreground);
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition-all);
+  z-index: var(--z-50);
+}
+
+.icon-tooltip:hover::before,
+.icon-tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* ========================================
+   RESPONSIVE ICONS
+   ======================================== */
+
+@media (max-width: 768px) {
+  .icon-grid {
+    grid-template-columns: repeat(auto-fill, minmax(6rem, 1fr));
+    gap: var(--space-3);
+  }
+  
+  .icon-grid-item {
+    padding: var(--space-3);
+  }
+  
+  .icon-grid-item .icon {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  
+  .icon-list-item {
+    padding: var(--space-1_5) 0;
+  }
+}
+
+/* ========================================
+   ICON ACCESSIBILITY
+   ======================================== */
+
+.icon[aria-hidden="true"] {
+  aria-hidden: true;
+}
+
+.icon[role="img"] {
+  role: img;
+}
+
+.icon[aria-label] {
+  aria-label: attr(aria-label);
+}
+
+/* ========================================
+   ICON PRINT STYLES
+   ======================================== */
+
+@media print {
+  .icon {
+    color: black !important;
+    stroke: black !important;
+    fill: black !important;
+  }
+  
+  .icon-container {
+    background-color: transparent !important;
+    border: 1px solid black !important;
+  }
+  
+  .icon-btn {
+    background-color: transparent !important;
+    border: 1px solid black !important;
+  }
+}
+
+/* ========================================
+   ICON PERFORMANCE
+   ======================================== */
+
+.icon,
+.icon-container,
+.icon-btn {
+  will-change: transform;
+}
+
+.icon-animate {
+  will-change: transform, opacity;
+}
+
+/* ========================================
+   CUSTOM ICON STYLES
+   ======================================== */
+
+.icon-brand {
+  fill: url(#brandGradient);
+  stroke: none;
+}
+
+.icon-gradient {
+  fill: url(#iconGradient);
+  stroke: none;
+}
+
+.icon-shadow {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+}
+
+.icon-glow {
+  filter: drop-shadow(0 0 8px currentColor);
+}
+
+.icon-blur {
+  filter: blur(1px);
+}
+
+.icon-brightness {
+  filter: brightness(1.2);
+}
+
+.icon-contrast {
+  filter: contrast(1.2);
+}
+
+.icon-saturate {
+  filter: saturate(1.2);
+}
+
+.icon-sepia {
+  filter: sepia(1);
+}
+
+.icon-grayscale {
+  filter: grayscale(1);
+}
+
+.icon-invert {
+  filter: invert(1);
+}
+
+.icon-hue-rotate {
+  filter: hue-rotate(90deg);
+}

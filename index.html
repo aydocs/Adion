@@ -3,30 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AYdocs Framework - The World's Most Advanced Web Framework</title>
+    <title>Adion Framework - The World's Most Advanced Web Framework</title>
     
-    <!-- AYdocs Framework CSS -->
+    <!-- Adion Framework CSS -->
     <link rel="stylesheet" href="css/framework.css">
     <link rel="stylesheet" href="css/components.css">
     <link rel="stylesheet" href="css/themes.css">
     <link rel="stylesheet" href="css/animations.css">
-    
-    <!-- AYdocs Icons -->
     <link rel="stylesheet" href="css/icons.css">
+    <link rel="stylesheet" href="css/navigation.css">
+    <link rel="stylesheet" href="css/notifications.css">
+    <link rel="stylesheet" href="css/statistics.css">
     
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="assets/icons/favicon.svg">
     
     <!-- Meta Tags -->
-    <meta name="description" content="AYdocs Framework - The most advanced, feature-rich web framework built from scratch. No dependencies, pure HTML, CSS, JS.">
-    <meta name="keywords" content="web framework, css framework, javascript framework, ui components, responsive design">
-    <meta name="author" content="AYdocs">
+    <meta name="description" content="Adion Framework - The most advanced, feature-rich web framework built from scratch. No dependencies, pure HTML, CSS, JS.">
+    <meta name="keywords" content="web framework, css framework, javascript framework, ui components, responsive design, adion">
+    <meta name="author" content="Adion Team">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="AYdocs Framework - Advanced Web Framework">
+    <meta property="og:title" content="Adion Framework - Advanced Web Framework">
     <meta property="og:description" content="The world's most advanced web framework built from scratch">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://aydocs.dev">
+    <meta property="og:url" content="https://adion.dev">
     
     <!-- Theme Color -->
     <meta name="theme-color" content="#6366f1">
@@ -44,7 +45,7 @@
                     <text x="50" y="55" text-anchor="middle" font-size="20" font-weight="bold" fill="currentColor">A</text>
                 </svg>
             </div>
-            <h2 class="loading-text">AYdocs Framework</h2>
+            <h2 class="loading-text">Adion Framework</h2>
             <p class="loading-subtitle">Loading the most advanced web framework...</p>
         </div>
     </div>
@@ -67,7 +68,7 @@
                         <path d="M35 35 L65 35 L65 65 L35 65 Z" fill="none" stroke="url(#brandGradient)" stroke-width="2"/>
                         <circle cx="50" cy="50" r="8" fill="url(#brandGradient)"/>
                     </svg>
-                    <span class="brand-text">AYdocs</span>
+                    <span class="brand-text">Adion</span>
                 </a>
             </div>
 
@@ -161,7 +162,7 @@
                     
                     <h1 class="hero-title">
                         Build <span class="gradient-text">Incredible</span> Web Applications
-                        <br>with <span class="gradient-text">AYdocs Framework</span>
+                        <br>with <span class="gradient-text">Adion Framework</span>
                     </h1>
                     
                     <p class="hero-description">
@@ -186,7 +187,7 @@
                         </button>
                     </div>
                     
-                    <div class="hero-stats">
+                    <div class="hero-stats" id="hero-stats">
                         <div class="stat-item">
                             <div class="stat-number" data-target="100000">0</div>
                             <div class="stat-label">Lines of Code</div>
@@ -236,7 +237,7 @@
         <section id="features" class="features-section">
             <div class="container">
                 <div class="section-header">
-                    <h2 class="section-title">Why Choose AYdocs Framework?</h2>
+                    <h2 class="section-title">Why Choose Adion Framework?</h2>
                     <p class="section-description">
                         Built with modern web standards and designed for the future of web development
                     </p>
@@ -371,6 +372,27 @@
                             <button class="btn btn-primary" id="modal-demo-btn">Open Modal</button>
                         </div>
                     </div>
+                    
+                    <!-- Statistics Demo -->
+                    <div class="component-demo">
+                        <h3 class="demo-title">Real-time Statistics</h3>
+                        <div class="demo-content">
+                            <div id="statistics-demo" class="statistics-display statistics-grid">
+                                <!-- Statistics will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Notifications Demo -->
+                    <div class="component-demo">
+                        <h3 class="demo-title">Advanced Notifications</h3>
+                        <div class="demo-content">
+                            <button class="btn btn-success" id="notification-success-btn">Success</button>
+                            <button class="btn btn-danger" id="notification-error-btn">Error</button>
+                            <button class="btn btn-warning" id="notification-warning-btn">Warning</button>
+                            <button class="btn btn-info" id="notification-info-btn">Info</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -381,7 +403,7 @@
                 <div class="section-header">
                     <h2 class="section-title">Get Started Today</h2>
                     <p class="section-description">
-                        Join thousands of developers building amazing applications with AYdocs Framework
+                        Join thousands of developers building amazing applications with Adion Framework
                     </p>
                 </div>
                 
@@ -426,7 +448,7 @@
                             <path d="M30 30 L70 30 L70 70 L30 70 Z" fill="url(#footerGradient)" opacity="0.8"/>
                             <circle cx="50" cy="50" r="8" fill="url(#footerGradient)"/>
                         </svg>
-                        <h3 class="footer-title">AYdocs Framework</h3>
+                        <h3 class="footer-title">Adion Framework</h3>
                     </div>
                     <p class="footer-description">
                         The world's most advanced web framework built from scratch. 
@@ -467,8 +489,8 @@
             
             <div class="footer-bottom">
                 <p class="footer-copyright">
-                    &copy; 2024 AYdocs Framework. All rights reserved. 
-                    Built with ❤️ by AYdocs Team.
+                    &copy; 2024 Adion Framework. All rights reserved. 
+                    Built with ❤️ by Adion Team.
                 </p>
             </div>
         </div>
@@ -480,11 +502,12 @@
     <!-- Modal Container -->
     <div id="modal-container" class="modal-container"></div>
 
-    <!-- AYdocs Framework JavaScript -->
+    <!-- Adion Framework JavaScript -->
     <script src="js/framework.js"></script>
     <script src="js/components.js"></script>
-    <script src="js/animations.js"></script>
-    <script src="js/theme.js"></script>
+    <script src="js/navigation.js"></script>
+    <script src="js/notifications.js"></script>
+    <script src="js/statistics.js"></script>
     <script src="js/app.js"></script>
 </body>
 </html>
